@@ -16,12 +16,12 @@ function clickButton() {
 }
 
 function upgradeOne() {
-  let scoreMltply = 1;
+  let scoreMltply = 0;
   if (clickScore >= upgradeCost1) {
     scoreMltply = scoreMltply + 1;
     clickScore = clickScore - upgradeCost1;
     clickValue = clickValue + scoreMltply;
-    upgradeCost1 = upgradeCost1 * 2;
+    upgradeCost1 = upgradeCost1 * 3;
     var q = document.getElementById("score");
     q.innerHTML = clickScore;
     var p = document.getElementById("upgradeCost");
