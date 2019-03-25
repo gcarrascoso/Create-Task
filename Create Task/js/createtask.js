@@ -5,6 +5,7 @@ var upgrade = 0;
 var upgradelvl = 0;
 var upgradeCost1 = 50;
 var upgradeCost2 = 900;
+var time = 0;
 
 function clickButton() {
   clickScore = clickScore + clickValue;
