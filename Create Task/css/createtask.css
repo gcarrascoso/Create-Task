@@ -1,3 +1,14 @@
-#tonyJuice:active {
+.button:active {
   transform: translateY(4px);
 }
+.upgrade1 {
+
+}
+#farmer {
+  height: 260px;
+  width: 260px;
+  margin-left: 60px;
+}
+ body {
+   background-color: #f9fbff;
+ }
