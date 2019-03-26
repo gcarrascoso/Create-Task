@@ -6,21 +6,25 @@
     <title>Clicker Game</title>
     <script type = "text/javascript" src = "js/createtask.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "css/createtask.css">
+    <link rel="stylesheet" type="text/css" href="css/createtask.css"/>
   </head>
 
   <body>
 
     <div align = "center">
-      <img id = "tonyJuice" src="https://images.vexels.com/media/users/3/131618/isolated/preview/4ce95d6b92d5e3e22f95182152622346-orange-glass-jar-by-vexels.png" onclick = "clickButton()">
+      <h1>Click To Make Tony Juice!</h1>
+      <img class = "button" src="https://images.vexels.com/media/users/3/131618/isolated/preview/4ce95d6b92d5e3e22f95182152622346-orange-glass-jar-by-vexels.png" onclick = "clickButton()">
       <p class = "output" id = "score">0</p>
       <p class = "output" id = "timesClicked">0</p>
     </div>
 
     <div>
-      <button onclick = "upgradeOne()">Upgrade 1</button>
-      <p id = "upgradeCost">50</p>
-      <button onclick = "upgradeTwo()">Upgrade 2</button>
-      <p id = "upgradeCost2">900</p>
+      <img class = "button" id = "farmer" src="http://pngimg.com/uploads/farmer/farmer_PNG37.png" onclick = "upgradeOne()">
+      <p class = "upgrades" id = "farmWorker">50 TJ</p>
+      <p id = "workerAmt">0 Farmers</p>
+      <img class = "button" id = "assistantManager" src="https://www.4ccf.org/wp-content/uploads/2016/07/employee-1.png" onclick = "upgradeTwo()">
+      <p class = "upgrades" id = "upgrade2">900 TJ</p>
+      <p id = "amAmt">0 Assistant Managers</p>
     </div>
     <div>
       <table id= "info">

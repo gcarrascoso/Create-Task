@@ -1,8 +1,37 @@
-#tonyJuice:active {
+.button:active {
   transform: translateY(4px);
   transition-duration: 0.15s;
 }
 #info {
   border-collapse: collapse;
   border: 2px solid black;
+}
+.upgrade1 {
+
+}
+#farmer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 50px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+}
+ body {
+   background-color: #f9fbff;
+ }
+ #farmWorker{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   top: 200px;
+   left: 140px;
+ }
+#workerAmt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 220px;
+  left: 140px;
 }

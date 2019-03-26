@@ -6,6 +6,9 @@ var upgradelvl = 0;
 var upgradeCost1 = 50;
 var upgradeCost2 = 900;
 var time = 0;
+var farmerAmt = 0;
+var amAmt = 0;
+var scoreMltply = 1;
 
 function clickButton() {
   clickScore = clickScore + clickValue;
@@ -17,29 +20,33 @@ function clickButton() {
 }
 
 function upgradeOne() {
-  let scoreMltply = 0;
   if (clickScore >= upgradeCost1) {
     scoreMltply = scoreMltply + 1;
     clickScore = clickScore - upgradeCost1;
     clickValue = clickValue + scoreMltply;
     upgradeCost1 = upgradeCost1 * 3;
+    farmerAmt++;
     var q = document.getElementById("score");
     q.innerHTML = clickScore;
-    var p = document.getElementById("upgradeCost");
-    p.innerHTML = upgradeCost1;
+    var p = document.getElementById("farmWorker");
+    p.innerHTML = upgradeCost1 + " TJ";
+    var g = document.getElementById("workerAmt");
+    g.innerHTML = (farmerAmt + " Farmers");
   }
 }
 
 function upgradeTwo() {
-  let scoreMltply = 1;
   if (clickScore >= upgradeCost2) {
-    scoreMltply = scoreMltply * 3;
+    scoreMltply = scoreMltply + 75;
     clickScore = clickScore - upgradeCost2;
-    clickValue = clickValue * scoreMltply;
+    clickValue = clickValue + scoreMltply;
     upgradeCost2 = upgradeCost2 * 2;
+    amAmt++;
     var q = document.getElementById("score");
     q.innerHTML = clickScore;
-    var a = document.getElementById("upgradeCost2");
-    a.innerHTML = upgradeCost2;
+    var p = document.getElementById("upgrade2");
+    p.innerHTML = upgradeCost2 + " TJ";
+    var g = document.getElementById("amAmt");
+    g.innerHTML = (amAmt + " Assistant Managers");
   }
 }
