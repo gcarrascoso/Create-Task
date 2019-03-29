@@ -5,12 +5,15 @@ var upgrade = 0;
 var upgradelvl = 0;
 var upgradeCost1 = 50;
 var upgradeCost2 = 900;
-var time = 0;
+var start = false;
 var farmerAmt = 0;
 var amAmt = 0;
 var scoreMltply = 1;
-
+var time= 0;
+var tjps=0;
+var upgradeCost3 = 3000;
 function clickButton() {
+  start = false;
   clickScore = clickScore + clickValue;
   amountClicked = amountClicked + 1;
   var p = document.getElementById("score");
@@ -49,4 +52,19 @@ function upgradeTwo() {
     var g = document.getElementById("amAmt");
     g.innerHTML = (amAmt + " Assistant Managers");
   }
+}
+
+function upgrade3() {
+  if(clickScore >= upgradeCost3){
+    upgradeCost3 =(upgradeCost3*4);
+    time();
+    var s = document.getElementById(upgrade3).innerHTML = (upgradeCost3);
+    var b = document.getElementById(tonyJuicePerSec).innerHTML = ("TJPS" + tjps);
+  }
+}
+
+function time(){
+  tjps = tjps++;
+  clickScore = clickscore + 2;
+  setTimeout(time, 1000);
 }

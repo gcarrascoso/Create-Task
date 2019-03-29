@@ -1,3 +1,6 @@
+body {
+  background-color: #3bd6fd;
+}
 .button:active {
   transform: translateY(4px);
   transition-duration: 0.15s;
@@ -6,32 +9,43 @@
   border-collapse: collapse;
   border: 2px solid black;
 }
-.upgrade1 {
-
-}
 #farmer {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 50px;
+  top: 80px;
   left: 100px;
   width: 150px;
   height: 150px;
+  border: 2px solid rgb(55, 93, 151);
+  border-radius: 50%;
 }
- body {
-   background-color: #f9fbff;
- }
- #farmWorker{
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   top: 200px;
-   left: 140px;
- }
-#workerAmt {
+#assistantManager{
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 220px;
-  left: 140px;
+  top: 250px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(55, 93, 151);
+  border-radius: 50%;
+}
+#upgradeText1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 80px;
+  left: 300px;
+}
+#upgradeText2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 250px;
+  left: 300px;
+}
+#juiceClicker{
+  position: relative;
+  z-index: 100;
 }
