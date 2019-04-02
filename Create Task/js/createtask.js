@@ -8,15 +8,17 @@ var upgradeCost2 = 900;
 var upgradeCost3 = 10000;
 var upgradeCost4 = 100000;
 var upgradeCost5 = 500000000;
+var upgradeCost6 = 30000;
 var start = false;
 var farmerAmt = 0;
 var amAmt = 0;
 var bbAmt = 0;
 var emAmt = 0;
 var aiAmt = 0;
+var juiceMkrAmt = 0;
 var scoreMltply = 1;
-var time= 0;
 var tjps=0;
+var secs = false
 
 function clickButton() {
   start = false;
@@ -105,5 +107,31 @@ function upgradeFive() {
     p.innerHTML = upgradeCost5 + " TJ";
     var g = document.getElementById("aiAmt");
     g.innerHTML = (aiAmt + " Robots");
+  }
+}
+
+function upgradeSix(){
+  if (clickScore >= upgradeCost6) {
+    clickScore = clickScore - upgradeCost6;
+    upgradeCost6 = upgradeCost6 * 3;
+    juiceMkrAmt++;
+    secs = true;
+    var q = document.getElementById("score");
+    q.innerHTML = clickScore;
+    var p = document.getElementById("upgrade6");
+    p.innerHTML = upgradeCost6 + " TJ";
+    var g = document.getElementById("juiceMkrAmt");
+    g.innerHTML = (juiceMkrAmt + " Juice Makers");
+}
+}
+function time(){
+  if (secs === true) {
+  clickScore = clickScore + clickValue;
+  amountClicked = amountClicked + 1;
+  var p = document.getElementById("score");
+  p.innerHTML = clickScore;
+  var q = document.getElementById("timesClicked");
+  q.innerHTML = amountClicked;
+  setTimeout(time, 15000);
   }
 }
