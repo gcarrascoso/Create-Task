@@ -17,7 +17,7 @@ body {
   left: 100px;
   width: 150px;
   height: 150px;
-  border: 2px solid rgb(55, 93, 151);
+  border: 4px solid #ff9900;
   border-radius: 50%;
 }
 #assistantManager{
@@ -28,9 +28,46 @@ body {
   left: 100px;
   width: 150px;
   height: 150px;
-  border: 2px solid rgb(55, 93, 151);
+  border: 4px solid #ff9900;
   border-radius: 50%;
 }
+
+#bossBaby {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 420px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #ff9900;
+  border-radius: 50%;
+}
+
+#elonMusk {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 590px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #ff9900;
+  border-radius: 50%;
+}
+
+#artificialIntel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 760px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid #ff9900;
+  border-radius: 50%;
+}
+
 #upgradeText1{
   position: absolute;
   bottom: 0;
@@ -45,6 +82,31 @@ body {
   top: 250px;
   left: 300px;
 }
+
+#upgradeText3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 420px;
+  left: 300px;
+}
+
+#upgradeText4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 590px;
+  left: 300px;
+}
+
+#upgradeText5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 760px;
+  left: 300px;
+}
+
 #juiceClicker{
   position: relative;
   z-index: 100;
