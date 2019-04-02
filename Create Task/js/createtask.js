@@ -5,13 +5,19 @@ var upgrade = 0;
 var upgradelvl = 0;
 var upgradeCost1 = 50;
 var upgradeCost2 = 900;
+var upgradeCost3 = 10000;
+var upgradeCost4 = 100000;
+var upgradeCost5 = 500000000;
 var start = false;
 var farmerAmt = 0;
 var amAmt = 0;
+var bbAmt = 0;
+var emAmt = 0;
+var aiAmt = 0;
 var scoreMltply = 1;
 var time= 0;
 var tjps=0;
-var upgradeCost3 = 3000;
+
 function clickButton() {
   start = false;
   clickScore = clickScore + clickValue;
@@ -40,10 +46,10 @@ function upgradeOne() {
 
 function upgradeTwo() {
   if (clickScore >= upgradeCost2) {
-    scoreMltply = scoreMltply + 75;
+    scoreMltply = scoreMltply + 5;
     clickScore = clickScore - upgradeCost2;
     clickValue = clickValue + scoreMltply;
-    upgradeCost2 = upgradeCost2 * 2;
+    upgradeCost2 = upgradeCost2 * 3;
     amAmt++;
     var q = document.getElementById("score");
     q.innerHTML = clickScore;
@@ -54,17 +60,50 @@ function upgradeTwo() {
   }
 }
 
-function upgrade3() {
-  if(clickScore >= upgradeCost3){
-    upgradeCost3 =(upgradeCost3*4);
-    time();
-    var s = document.getElementById(upgrade3).innerHTML = (upgradeCost3);
-    var b = document.getElementById(tonyJuicePerSec).innerHTML = ("TJPS" + tjps);
+function upgradeThree() {
+  if (clickScore >= upgradeCost3) {
+    scoreMltply = scoreMltply + 20;
+    clickScore = clickScore - upgradeCost3;
+    clickValue = clickValue + scoreMltply;
+    upgradeCost3 = upgradeCost3 * 3;
+    bbAmt++;
+    var q = document.getElementById("score");
+    q.innerHTML = clickScore;
+    var p = document.getElementById("upgrade3");
+    p.innerHTML = upgradeCost3 + " TJ";
+    var g = document.getElementById("bbAmt");
+    g.innerHTML = (bbAmt + " Boss Babies");
   }
 }
 
-function time(){
-  tjps = tjps++;
-  clickScore = clickscore + 2;
-  setTimeout(time, 1000);
+function upgradeFour() {
+  if (clickScore >= upgradeCost4) {
+    scoreMltply = scoreMltply + 150;
+    clickScore = clickScore - upgradeCost4;
+    clickValue = clickValue + scoreMltply;
+    upgradeCost4 = upgradeCost4 * 3;
+    emAmt++;
+    var q = document.getElementById("score");
+    q.innerHTML = clickScore;
+    var p = document.getElementById("upgrade4");
+    p.innerHTML = upgradeCost4 + " TJ";
+    var g = document.getElementById("emAmt");
+    g.innerHTML = (emAmt + " Elon Musks");
+  }
+}
+
+function upgradeFive() {
+  if (clickScore >= upgradeCost5) {
+    scoreMltply = scoreMltply + 50000;
+    clickScore = clickScore - upgradeCost5;
+    clickValue = clickValue + scoreMltply;
+    upgradeCost5 = upgradeCost5 * 3;
+    aiAmt++;
+    var q = document.getElementById("score");
+    q.innerHTML = clickScore;
+    var p = document.getElementById("upgrade5");
+    p.innerHTML = upgradeCost5 + " TJ";
+    var g = document.getElementById("aiAmt");
+    g.innerHTML = (aiAmt + " Robots");
+  }
 }
