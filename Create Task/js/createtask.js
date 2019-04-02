@@ -132,6 +132,6 @@ function time(){
   p.innerHTML = clickScore;
   var q = document.getElementById("timesClicked");
   q.innerHTML = amountClicked;
-  setTimeout(time, 15000);
+  setTimeout(time, 1000);
   }
 }
