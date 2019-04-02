@@ -5,6 +5,7 @@ body {
   transform: translateY(4px);
   transition-duration: 0.15s;
 }
+
 #info {
   border-collapse: collapse;
   border: 2px solid black;
@@ -13,7 +14,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 80px;
+  top: 220px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -24,7 +25,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 250px;
+  top: 390px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -36,7 +37,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 420px;
+  top: 560px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -48,7 +49,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 590px;
+  top: 730px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -60,7 +61,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 760px;
+  top: 900px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -72,14 +73,14 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 80px;
+  top: 220px;
   left: 300px;
 }
 #upgradeText2{
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 250px;
+  top: 390px;
   left: 300px;
 }
 
@@ -87,7 +88,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 420px;
+  top: 560px;
   left: 300px;
 }
 
@@ -95,7 +96,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 590px;
+  top: 730px;
   left: 300px;
 }
 
@@ -103,11 +104,60 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 760px;
+  top: 900px;
   left: 300px;
 }
 
-#juiceClicker{
-  position: relative;
+#juiceClicker {
   z-index: 100;
+  position: absolute;
+  top: 360px;
+  right: 472px;
+}
+
+#welcomeBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 80px;
+  left: 500px;
+  length: 200px;
+  width: 400px;
+  height: 200px;
+  border: 4px solid #ff9900;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#bigSign {
+  position: absolute;
+  top: 300px;
+  left: 590px;
+}
+
+#workerInfo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 50px;
+  left: 30px;
+  length: 200px;
+  width: 400px;
+  height: 130px;
+  border: 4px solid #ff9900;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#score {
+  position: absolute;
+  top: 800px;
+  left: 720px;
+}
+
+#timesClicked {
+  position: absolute;
+  position: absolute;
+  top: 830px;
+  left: 720px;
 }
