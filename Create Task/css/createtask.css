@@ -69,18 +69,6 @@ body {
   border-radius: 50%;
 }
 
-#juiceMkr{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 930px;
-  left: 100px;
-  width: 150px;
-  height: 150px;
-  border: 4px solid #ff9900;
-  border-radius: 50%;
-}
-
 #upgradeText1{
   position: absolute;
   bottom: 0;
@@ -161,6 +149,20 @@ body {
   padding-right: 5px;
 }
 
+#machineInfo {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 50px;
+    left: 985px;
+    length: 200px;
+    width: 400px;
+    height: 130px;
+    border: 4px solid #ff9900;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
 #score {
   position: absolute;
   top: 800px;
@@ -172,12 +174,4 @@ body {
   position: absolute;
   top: 830px;
   left: 720px;
-}
-
-#upgradeText6 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 930px;
-  left: 300px;
 }
