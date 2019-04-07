@@ -18,6 +18,7 @@ var aiAmt = 0;
 var juiceMkrAmt = 0;
 var scoreMltply = 1;
 var tjps=0;
+var timeScore = 0;
 
 
 function clickButton() {
@@ -122,9 +123,12 @@ function upgradeSix(){
     var g = document.getElementById("juiceMkrAmt");
     g.innerHTML = (juiceMkrAmt + " Juice Makers");
   }
-  clickScore = clickScore + time(timeScore);
+  time();
 }
 function time(){
-  timeScore++
+  timeScore = 1;
+  clickScore = (clickScore) + (timeScore);
+  var q = document.getElementById("score");
+  q.innerHTML = clickScore;
   setTimeout(time, 1000);
 }
