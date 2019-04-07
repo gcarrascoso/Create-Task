@@ -73,7 +73,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 930px;
+  top: 1070px;
   left: 100px;
   width: 150px;
   height: 150px;
@@ -133,7 +133,6 @@ body {
   right: 0;
   top: 80px;
   left: 500px;
-  length: 200px;
   width: 400px;
   height: 200px;
   border: 4px solid #ff9900;
@@ -153,7 +152,6 @@ body {
   right: 0;
   top: 50px;
   left: 30px;
-  length: 200px;
   width: 400px;
   height: 130px;
   border: 4px solid #ff9900;
@@ -178,6 +176,6 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 930px;
+  top: 1070px;
   left: 300px;
 }
